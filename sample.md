@@ -94,7 +94,7 @@
 
 <img src="https://raw.githubusercontent.com/uzoolove/fes11-project-vanilla-ins/main/assets/images/scrum_01.webp">
 
-프로젝트 [백로그](#백로그(Backlog))의 요구 사항 중 일부를 [스프린트](#스프린트(Sprints)) 기간 동안 구현하기 위해 목표 작업 목록을 정리합니다.
+프로젝트 [백로그](#백로그Backlog)의 요구 사항 중 일부를 [스프린트](#스프린트Sprints) 기간 동안 구현하기 위해 목표 작업 목록을 정리합니다.
 
 <img src="https://raw.githubusercontent.com/uzoolove/fes11-project-vanilla-ins/main/assets/images/scrum_02.webp">
 
