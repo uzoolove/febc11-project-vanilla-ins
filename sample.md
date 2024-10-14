@@ -31,32 +31,74 @@ git clone https://github.com/FRONTENDBOOTCAMP-11th/febc11-vanilla-팀명.git
 
 ## 이슈
 * 프로젝트를 진행하면서 발생하는 다양한 이벤트(버그, 추가해야 할 기능, 아이디어, 질문 등)를 등록하고 관리하는 기능
-* 팀원과 협업에 필요
 
 ### 이슈 템플릿 작성
-* 이슈 작성시 버그 리포트 같은 경우 버그 현상, 재현 시나리오 등 이슈에 포함되어야 하는 내용을 입력 할수 있도록 템플릿 제공
-* 깃허브 리포지토리에 등록해서 사용
-* Settings > General > Features > Issues > Set up templates
+* 이슈 작성시 버그 리포트 같은 경우 버그 현상, 재현 시나리오 등 이슈에 포함되어야 하는 내용을 입력 할수 있도록 템플릿 작성
+* 프로젝트 루트에 깃허브 이슈 템플릿 폴더 생성
+```sh
+mkdir ".github/ISSUE_TEMPLATE"
+```
+
+* 이슈 템플릿 폴더에 템플릿 파일 작성
+  - bug_report.md
+  ```md
+  ---
+  name: 버그 리포트
+  about: 버그를 신고하여 문제 해결에 도움을 주세요.
+  title: "[버그] 문제 설명"
+  labels: bug
+  assignees: ''
+
+  ---
+
+  ## 버그 설명
+  어떤 버그가 발생했는지 명확하게 설명해주세요.
+
+  ## 재현 방법
+  버그를 재현하기 위한 단계:
+  1. '...'로 이동
+  2. '...'를 클릭
+  3. '...'로 스크롤
+  4. 오류 발생
+
+  ## 기대한 동작
+  정상적으로 동작했을 때 기대한 결과를 설명해주세요.
+
+  ## 스크린샷
+  가능하다면, 스크린샷을 추가해주세요.
+
+  ## 환경
+  - OS: [예: Windows 10]
+  - 브라우저: [예: Chrome 91]
+  - 기타 관련 정보
+
+  ## 추가 정보
+  다른 정보가 있으면 추가해주세요.
   ```
-  Issue: Feature request 
-  Suggest an idea for this project
 
-  Is your feature request related to a problem? Please describe.
-  A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+  - feature_request.md
+  ```md
+  ---
+  name: 기능 요청
+  about: 새로운 기능 또는 개선 사항을 제안합니다.
+  title: "[기능 요청] 원하는 기능 설명"
+  labels: enhancement
+  assignees: ''
 
-  Describe the solution you'd like
-  A clear and concise description of what you want to happen.
+  ---
 
-  Describe alternatives you've considered
-  A clear and concise description of any alternative solutions or features you've considered.
+  ## 기능 요청 사항
+  어떤 기능을 추가하거나 개선하고 싶은지 설명해주세요.
 
-  Additional context
-  Add any other context or screenshots about the feature request here.
+  ## 해결 방법
+  이 기능을 어떻게 구현할지에 대한 간단한 설명을 적어주세요.
 
-  Optional additional items
-  Issue default title:
-  Assignees:
-  Labels:
+  ## 대안
+  이 기능의 대체 방안이 있으면 알려주세요.
+
+  ## 추가 정보
+  기능 요청과 관련하여 추가적으로 설명할 내용이 있으면 적어주세요.
+
   ```
 
 ### 이슈 관리
