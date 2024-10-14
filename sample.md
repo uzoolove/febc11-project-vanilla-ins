@@ -1,52 +1,42 @@
-
-
-# 팀 프로젝트 설정
-## 저장소 생성(팀장)
+# 팀 프로젝트 시작
+## 프로젝트 생성
+### 저장소 생성
 * github 로그인
 * Github organizations 접속
   - <https://github.com/orgs/FRONTENDBOOTCAMP-11th>
 * Repositories > New repository
   - Repository name: febc11-vanilla-팀명
-  - Description: Front-End School 11기 바닐라 프로젝트
-  - Public 선택
+  - Description: Front-End BootCamp 11기 바닐라 프로젝트 1조
+  - **Public 선택**
   - Create repository
 
 ### Collaborators 추가
-  - Settings > Collaborators and teams > Add people
-  - 팀원 초대
+* Settings > Collaborators and teams > Add people
+  - 팀원 계정 입력
+  - role: Write
+  - Add
 
-## 저장소 clone(팀원)
+### 저장소 clone
 ```sh
 git clone https://github.com/FRONTENDBOOTCAMP-11th/febc11-vanilla-팀명.git
 ```
 
-## 이슈 마일스톤 생성(팀장)
-* 이슈 마일스톤: 유사한 이슈들을 하나로 모아서 관리
-* 개발 목표를 마일스톤으로 만들고 관련 이슈들을 미리 생성하면 이슈들의 Open, Close 상태를 한눈에 관리
-* Issues > Milestones > Create a Milestone
-  - 스프린트 1주차, 2024-10-18, 마크업 완성
-  - 스프린트 2주차, 2024-10-25, 필수 기능 구현
-  - 스프린트 3주차, 2024-10-31, 필수 기능 구현이 완료되면 추가 기능 구현
+### 개발환경 구축
+* [프로젝트 시작 - 개발 환경 구축](./02.start.md#개발-환경-구축) 참고
 
-  - 게시물 목록 조회
-    + 목록 하나당 3줄만 표시되도록 CSS나 JS에서 처리 필요
-    + 페이징 처리
-    + 검색 기능 추가
-  - 게시물 상세 조회
-    + 댓글에 추가 댓글 기능 필요한지 확인
-    + 댓글 간격 조정
-  - 게시물 댓글 추가
-    + 페이지네이션 또는 무한 스크롤 적용
-    + 댓글 검색 기능 필요
-  - 전체 기능
-    + 네이버 로그인 OAuth 인증 구현
-    + 로그인 상태 저장 Session이나 JWT로 구현
-    + 카카오 지도 연동
-    + 실시간 버스 위치 조회(데이터 포털)
-  
-#### 이슈 템플릿 작성
+## 프로젝트 배포
+* [프로젝트 시작 - 배포](./02.start.md#프로젝트-배포) 참고
+
+
+
+## 이슈
+* 프로젝트를 진행하면서 발생하는 다양한 이벤트(버그, 추가해야 할 기능, 아이디어, 질문 등)를 등록하고 관리하는 기능
+* 팀원과 협업에 필요
+
+### 이슈 템플릿 작성
 * 이슈 작성시 버그 리포트 같은 경우 버그 현상, 재현 시나리오 등 이슈에 포함되어야 하는 내용을 입력 할수 있도록 템플릿 제공
-* Settings > Features, Issues, Set up templates
+* 깃허브 리포지토리에 등록해서 사용
+* Settings > General > Features > Issues > Set up templates
   ```
   Issue: Feature request 
   Suggest an idea for this project
@@ -69,11 +59,7 @@ git clone https://github.com/FRONTENDBOOTCAMP-11th/febc11-vanilla-팀명.git
   Labels:
   ```
 
-#### 이슈 작성
-* 프로젝트를 진행하면서 발생하는 다양한 이벤트(버그, 추가해야 할 기능, 아이디어, 질문 등)를 등록하고 관리하는 기능
-* 팀원과 협업에 필요
-
-#### 이슈 관리
+### 이슈 관리
 * 커밋할 때 이슈 메세지 추가
   - 커밋 메세지 입력 시 이슈 번호 지정
     ```
@@ -104,6 +90,49 @@ git clone https://github.com/FRONTENDBOOTCAMP-11th/febc11-vanilla-팀명.git
 
 
 
+### 마일스톤
+
+### 레이블
+
+## 깃허브 프로젝트 생성
+### 백로그 추가하면 이슈에 자동 등록
+
+
+## 위키 및 README.md
+
+
+
+## 커밋 컨벤션
+
+## 코드 컨벤션
+
+
+## Tailwindcss 설정
+
+
+
+## 깃허브 룰 설정
+### PR 템플릿
+
+
+
+
+## 마일스톤 생성
+* 마일스톤: 유사한 이슈들을 하나로 모아서 관리
+* 개발 목표를 마일스톤으로 만들고 관련 이슈들을 미리 생성하면 이슈들의 Open, Close 상태를 한눈에 관리
+* Issues > Milestones > Create a Milestone
+  - 스프린트 1주차, 2024-10-18, 마크업 완성
+  - 스프린트 2주차, 2024-10-25, 필수 기능 구현
+  - 스프린트 3주차, 2024-10-31, 필수 기능 구현이 완료되면 추가 기능 구현
+
+
+
+
+
+
+
+
+
 
 
 
@@ -123,6 +152,9 @@ ddf
 
 ## 팀 레포지토리 생성
 ### 팀원 초대
+
+### develop 브랜치 생성
+#### 기본으로 지정
 
 ## 레포지토리 clone
 

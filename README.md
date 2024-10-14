@@ -1,11 +1,10 @@
-# 멋쟁이 사자처럼 Front-End School 11기: 바닐라 프로젝트
+# FrontEnd BootCamp 11기 바닐라 프로젝트
 * GitHub Page에서 보기: <https://uzoolove.github.io/fes11-vanilla>
 * 소스 코드(GitHub): <https://github.com/uzoolove/fes11-vanilla>
 
 ## 목차
 1. [프로젝트 안내](./01.overview.md)
-2. [스크럼 프레임워크](#스크럼-프레임워크)
-3. [실습](#실습)
-4. [프로젝트 관리](#프로젝트-관리)
-5. [컨벤션 및 위키](#컨벤션-및-위키)
-6. [배포](#배포)
+2. [개인 프로젝트 생성에서 배포까지](./02.start.md)
+3. [구현 기능 범위](./03.feature.md)
+4. [팀 프로젝트 생성에서 배포까지](./04.start-team.md)
+5. [스크럼](./05.scrum.md)

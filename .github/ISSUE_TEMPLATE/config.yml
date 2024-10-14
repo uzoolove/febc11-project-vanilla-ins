@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 일반적인 이슈
+    url: https://github.com/uzoolove/fes11-project-vanilla-ins/discussions
+    about: 일반적인 이슈는 여기에 남겨주세요.
