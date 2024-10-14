@@ -1,181 +1,123 @@
-# 프로젝트 overview
 
-## 바닐라 프로젝트
 
-이 프로젝트는 **HTML, CSS, JavaScript**를 활용하여 실무에 가까운 웹 개발 경험을 쌓기 위한 3주간의 협업 프로젝트입니다. 개인과 팀의 **목표 설정**이 프로젝트 시작 전에 이루어져야 하며, 프로젝트는 개발뿐만 아니라 프로젝트 과정에서 발생한 **트러블 슈팅**과 **발표**까지 포함됩니다. 이 과정은 파이널 프로젝트의 예행 연습이자 팀 단합을 도모하는 기회입니다.
+# 팀 프로젝트 설정
+## 저장소 생성(팀장)
+* github 로그인
+* Github organizations 접속
+  - <https://github.com/orgs/FRONTENDBOOTCAMP-11th>
+* Repositories > New repository
+  - Repository name: febc11-vanilla-팀명
+  - Description: Front-End School 11기 바닐라 프로젝트
+  - Public 선택
+  - Create repository
+
+### Collaborators 추가
+  - Settings > Collaborators and teams > Add people
+  - 팀원 초대
 
-**합리적인 목표 설정**이 중요한 이유는, 실현 가능성과 도전적 요소를 구분하여 **해낼 수 있는 것**에 집중하는 것이 성공적인 프로젝트로 이어지기 때문입니다. 이 프로젝트는 결과보다는 **성장 과정**에 중점을 두고 있으며, 이슈 해결과 **문서화 및 기록**의 중요성을 강조합니다.
+## 저장소 clone(팀원)
+```sh
+git clone https://github.com/FRONTENDBOOTCAMP-11th/febc11-vanilla-팀명.git
+```
 
-많은 기능을 구현하여 완성도 높은 결과물을 만드는 것이 목표가 아닙니다. 하나의 기능이라도 **제대로 이해**하고 **구현**하는 것을 통해 HTML/CSS와 JavaScript를 깊이 있게 이해하는 것이 중요합니다.
+## 이슈 마일스톤 생성(팀장)
+* 이슈 마일스톤: 유사한 이슈들을 하나로 모아서 관리
+* 개발 목표를 마일스톤으로 만들고 관련 이슈들을 미리 생성하면 이슈들의 Open, Close 상태를 한눈에 관리
+* Issues > Milestones > Create a Milestone
+  - 스프린트 1주차, 2024-10-18, 마크업 완성
+  - 스프린트 2주차, 2024-10-25, 필수 기능 구현
+  - 스프린트 3주차, 2024-10-31, 필수 기능 구현이 완료되면 추가 기능 구현
 
+  - 게시물 목록 조회
+    + 목록 하나당 3줄만 표시되도록 CSS나 JS에서 처리 필요
+    + 페이징 처리
+    + 검색 기능 추가
+  - 게시물 상세 조회
+    + 댓글에 추가 댓글 기능 필요한지 확인
+    + 댓글 간격 조정
+  - 게시물 댓글 추가
+    + 페이지네이션 또는 무한 스크롤 적용
+    + 댓글 검색 기능 필요
+  - 전체 기능
+    + 네이버 로그인 OAuth 인증 구현
+    + 로그인 상태 저장 Session이나 JWT로 구현
+    + 카카오 지도 연동
+    + 실시간 버스 위치 조회(데이터 포털)
+  
+#### 이슈 템플릿 작성
+* 이슈 작성시 버그 리포트 같은 경우 버그 현상, 재현 시나리오 등 이슈에 포함되어야 하는 내용을 입력 할수 있도록 템플릿 제공
+* Settings > Features, Issues, Set up templates
+  ```
+  Issue: Feature request 
+  Suggest an idea for this project
 
-## 팀 구성
+  Is your feature request related to a problem? Please describe.
+  A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
 
-프로젝트 팀은 **4~5인**으로 구성되며, 각 팀의 리더는 **스크럼 마스터(Scrum Master)** 역할을 수행합니다.
+  Describe the solution you'd like
+  A clear and concise description of what you want to happen.
 
----
+  Describe alternatives you've considered
+  A clear and concise description of any alternative solutions or features you've considered.
 
-## 프로젝트 목표
+  Additional context
+  Add any other context or screenshots about the feature request here.
 
-이 프로젝트의 목표는 웹 개발의 전반적인 기술을 익히고 실무 역량을 강화하는 것입니다. 구체적인 목표는 다음과 같습니다:
+  Optional additional items
+  Issue default title:
+  Assignees:
+  Labels:
+  ```
 
-- **요구사항 분석** 및 구현
-- **웹표준** 준수
-- **시맨틱 마크업** 작성
-- **웹접근성 체크리스트** 기반 개발
-- **검색 엔진 최적화(SEO)**
-- **성능 최적화**
-- **코드 품질 관리**
+#### 이슈 작성
+* 프로젝트를 진행하면서 발생하는 다양한 이벤트(버그, 추가해야 할 기능, 아이디어, 질문 등)를 등록하고 관리하는 기능
+* 팀원과 협업에 필요
 
----
+#### 이슈 관리
+* 커밋할 때 이슈 메세지 추가
+  - 커밋 메세지 입력 시 이슈 번호 지정
+    ```
+    feat: 카카오 연동 완료
 
-## 프로젝트 관리
+    #123 
+    ```
+* 커밋할 때 이슈 종료
+  - 커밋 메세지 입력 시 이슈 번호와 다음 키워드 같이 사용
+    ```
+    close
+    closes
+    closed
+    fix
+    fixes
+    fixed
+    resolve
+    resolves
+    resolved
+    ```
+    ```
+    feat: 카카오 연동 오류 수정
+    
+    fix #123
+    ```
 
-효율적인 프로젝트 관리를 위해 다음과 같은 도구와 방식을 활용합니다:
 
-- **Git & Github**를 통한 소스 코드 관리
-- **마일스톤** 및 **레이블**을 통한 이슈 관리
-- **위클리 스프린트 계획, 리뷰, 회고**
-- **데일리 스크럼** 작성 및 진행
-- **이슈 및 토론**을 통한 협업 관리
-- **위키 작성**으로 프로젝트 문서화
 
----
 
-## 프로젝트 규칙
 
-프로젝트 진행 중 모든 팀원이 공통의 규칙을 따릅니다:
 
-- **브랜치 네이밍 컨벤션**
-- **커밋 메시지 규칙** 준수
-- **코딩 컨벤션**에 맞춘 코드 작성
-- **데일리 스크럼 템플릿** 사용
-- **이슈 및 토론 템플릿** 작성
-- **체크리스트** 활용을 통한 작업 진행 확인
 
----
 
-## 트러블 슈팅
 
-문제가 발생할 경우 다음 단계를 통해 해결합니다:
 
-1. **문제의 원인**을 생각합니다.
-2. **핵심 키워드**를 도출하고 검색합니다.
-3. **팀원과 토의**하여 다양한 해결책을 모색합니다.
-4. **정확한 진단**과 해결 방법을 기록합니다.
-5. 해결되지 않을 경우, **강사** 또는 **멘토**에게 질문합니다.
-6. 문제 해결 후에는 **정리**하여 이해하기 쉽게 **문서화**합니다.
 
----
 
-## 효과적인 발표
 
-최종 발표는 팀의 성과를 공유하는 중요한 시간입니다. 발표 시 주의할 점은 다음과 같습니다:
 
-- **발표 시간**: 15~20분 내외
-- **핵심 내용 요약**: 불필요한 내용은 과감히 생략
-- **발표 자료 작성** 및 리허설 진행
-- **적절한 제스처**와 **자신감 있는 발표**
-- **경험 공유**: 프로젝트에서 좋았던 점과 아쉬웠던 부분을 함께 나누기
 
----
 
 
-
-# 스크럼
-
-> [스크럼(scrum)](https://ko.wikipedia.org/wiki/%EC%8A%A4%ED%81%AC%EB%9F%BC_(%EC%95%A0%EC%9E%90%EC%9D%BC_%EA%B0%9C%EB%B0%9C_%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4))은 프로젝트 관리를 위한 상호, 점진적 개발방법론이며, 애자일 소프트웨어 개발 중의 하나입니다. 스크럼(scrum)은 소프트웨어 개발 프로젝트를 위하여 고안되었지만, 소프트웨어 유지보수 팀이나 일반적인 프로젝트/프로그램 관리에서도 적용될 수 있습니다.
-
-## 스크럼 프로세스
-
-스크럼(Scrum)은 팀이 경험을 통해 배우고 문제를 해결하면서 스스로 구성하고 얻은 것과 잃은 것을 되돌아보며 개선하도록 유도합니다.
-
-디자인 시안을 기반으로 요구사항 분석하고 작업의 우선 순위를 정리합니다.
-
-<img src="https://raw.githubusercontent.com/uzoolove/fes11-project-vanilla-ins/main/assets/images/scrum_01.webp">
-
-프로젝트 [백로그](#백로그Backlog)의 요구 사항 중 일부를 [스프린트](#스프린트Sprints) 기간 동안 구현하기 위해 목표 작업 목록을 정리합니다.
-
-<img src="https://raw.githubusercontent.com/uzoolove/fes11-project-vanilla-ins/main/assets/images/scrum_02.webp">
-
-스프린트 백로그가 정해지면 스프린트 실행 계획에 관한 논의를 팀원들과 진행합니다.
-
-<img src="https://raw.githubusercontent.com/uzoolove/fes11-project-vanilla-ins/main/assets/images/scrum_03.webp">
-
-이러한 스프린트 기간 동안은 매일 어제 한 일, 오늘 할 일, 해결해야 할 이슈에 대한 회의를 진행합니다.
-
-<img src="https://raw.githubusercontent.com/uzoolove/fes11-project-vanilla-ins/main/assets/images/scrum_04.webp">
-
-개인과 공동의 목표를 이루기 위해 계획한 대로 기능을 구현합니다.
-
-<img src="https://raw.githubusercontent.com/uzoolove/fes11-project-vanilla-ins/main/assets/images/scrum_05.webp">
-
-기능 구현 단계에서 매일 어제 한 일, 오늘 할 일, 해결해야 할 이슈에 대한 회의를 진행합니다.
-
-<img src="https://raw.githubusercontent.com/uzoolove/fes11-project-vanilla-ins/main/assets/images/scrum_06.webp">
-
-스프린트 마지막 날 구현이 끝난 후 데일리 스크럼을 통해 시연 및 검토와 함께 리뷰를 진행합니다.
-
-<img src="https://raw.githubusercontent.com/uzoolove/fes11-project-vanilla-ins/main/assets/images/scrum_07.webp">
-
-스프린트 마지막 날 회고를 통해 좋았던 점, 아쉬웠던 점 및 개선 사항을 논의합니다.
-
-<img src="https://raw.githubusercontent.com/uzoolove/fes11-project-vanilla-ins/main/assets/images/scrum_08.webp">
-
-스프린트가 끝나면 제품이 완성됩니다.
-
-<img src="https://raw.githubusercontent.com/uzoolove/fes11-project-vanilla-ins/main/assets/images/scrum_09.webp">
-
-
-## 역할
-
-스크럼 프로세스 역할 모델 중 프로젝트에서 여러분의 담당 역할은 “개발 팀” 입니다. 스크럼 마스터는 팀원 중 1명이 담당하고, 시니어 관리자는 멘토(강사)가 담당합니다.
-
-<img src="https://raw.githubusercontent.com/uzoolove/fes11-project-vanilla-ins/main/assets/images/scrum_10.webp">
-
-> 스크럼 마스터는 프로젝트 과정에서 [애자일(Agile)](https://ko.wikipedia.org/wiki/%EC%95%A0%EC%9E%90%EC%9D%BC_%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4_%EA%B0%9C%EB%B0%9C) 프로젝트 관리를 사용하여 팀을 이끄는 전문가로 리더십과 팀원 간의 모든 의사소통을 담당합니다.
-
-## 백로그(Backlog)
-
-제품 백로그는 로드맵 및 그 요구 사항에 파생된 개발 팀에서 수행할 우선 순위가 지정된 작업 목록입니다.
-
-<img src="https://raw.githubusercontent.com/uzoolove/fes11-project-vanilla-ins/main/assets/images/backlog_01.webp">
-
-## 스프린트(Sprints)
-
-스프린트는 팀이 일정량의 작업을 완료하는 시간이 정해진 짧은 기간입니다.
-
-- 1주차 스프린트
-- 2주차 스프린트
-
-<img src="https://raw.githubusercontent.com/uzoolove/fes11-project-vanilla-ins/main/assets/images/sprints_01.webp">
-
-## 스크럼(Scrums)
-
-매일 아침 모든 팀원이 각자 당일의 업무와 협업 요청 사항을 공유하는 것을 말합니다.
-
-<img src="https://raw.githubusercontent.com/uzoolove/fes11-project-vanilla-ins/main/assets/images/sprints_02.webp">
-
-<img src="https://raw.githubusercontent.com/uzoolove/fes11-project-vanilla-ins/main/assets/images/sprints_03.webp">
-
-<img src="https://raw.githubusercontent.com/uzoolove/fes11-project-vanilla-ins/main/assets/images/sprints_04.webp">
-
-## 리뷰(Reviews)
-
-리뷰는 팀원이 서로 질문하고 새로운 기능을 사용해보고 피드백을 주는 시간입니다.
-
-<img src="https://raw.githubusercontent.com/uzoolove/fes11-project-vanilla-ins/main/assets/images/sprints_05.webp">
-
-## 회고(Retrospectives)
-
-회고는 팀이 미래를 개선하기 위해 과거를 되돌아보는 시간입니다.
-
-<img src="https://raw.githubusercontent.com/uzoolove/fes11-project-vanilla-ins/main/assets/images/sprints_06.webp">
-
-
-# 초기 세팅
 ## 컨벤션
-
+ddf
 
 # 실습
 
