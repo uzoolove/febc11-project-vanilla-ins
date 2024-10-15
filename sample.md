@@ -1,152 +1,12 @@
-# 팀 프로젝트 시작
-## 프로젝트 생성
-### 저장소 생성
-* github 로그인
-* Github organizations 접속
-  - <https://github.com/orgs/FRONTENDBOOTCAMP-11th>
-* Repositories > New repository
-  - Repository name: febc11-vanilla-팀명
-  - Description: Front-End BootCamp 11기 바닐라 프로젝트 1조
-  - **Public 선택**
-  - Create repository
-
-### Collaborators 추가
-* Settings > Collaborators and teams > Add people
-  - 팀원 계정 입력
-  - role: Write
-  - Add
-
-### 저장소 clone
-```sh
-git clone https://github.com/FRONTENDBOOTCAMP-11th/febc11-vanilla-팀명.git
-```
-
-### 개발환경 구축
-* [프로젝트 시작 - 개발 환경 구축](./02.start.md#개발-환경-구축) 참고
-
-## 프로젝트 배포
-* [프로젝트 시작 - 배포](./02.start.md#프로젝트-배포) 참고
-
-
-
-## 이슈
-* 프로젝트를 진행하면서 발생하는 다양한 이벤트(버그, 추가해야 할 기능, 아이디어, 질문 등)를 등록하고 관리하는 기능
-
-### 이슈 템플릿 작성
-* 이슈 작성시 버그 리포트 같은 경우 버그 현상, 재현 시나리오 등 이슈에 포함되어야 하는 내용을 입력 할수 있도록 템플릿 작성
-* 프로젝트 루트에 깃허브 이슈 템플릿 폴더 생성
-```sh
-mkdir ".github/ISSUE_TEMPLATE"
-```
-
-* 이슈 템플릿 폴더에 템플릿 파일 작성
-  - bug_report.md
-  ```md
-  ---
-  name: 버그 리포트
-  about: 버그를 신고하여 문제 해결에 도움을 주세요.
-  title: "[버그] 문제 설명"
-  labels: bug
-  assignees: ''
-
-  ---
-
-  ## 버그 설명
-  어떤 버그가 발생했는지 명확하게 설명해주세요.
-
-  ## 재현 방법
-  버그를 재현하기 위한 단계:
-  1. '...'로 이동
-  2. '...'를 클릭
-  3. '...'로 스크롤
-  4. 오류 발생
-
-  ## 기대한 동작
-  정상적으로 동작했을 때 기대한 결과를 설명해주세요.
-
-  ## 스크린샷
-  가능하다면, 스크린샷을 추가해주세요.
-
-  ## 환경
-  - OS: [예: Windows 10]
-  - 브라우저: [예: Chrome 91]
-  - 기타 관련 정보
-
-  ## 추가 정보
-  다른 정보가 있으면 추가해주세요.
-  ```
-
-  - feature_request.md
-  ```md
-  ---
-  name: 기능 요청
-  about: 새로운 기능 또는 개선 사항을 제안합니다.
-  title: "[기능 요청] 원하는 기능 설명"
-  labels: enhancement
-  assignees: ''
-
-  ---
-
-  ## 기능 요청 사항
-  어떤 기능을 추가하거나 개선하고 싶은지 설명해주세요.
-
-  ## 해결 방법
-  이 기능을 어떻게 구현할지에 대한 간단한 설명을 적어주세요.
-
-  ## 대안
-  이 기능의 대체 방안이 있으면 알려주세요.
-
-  ## 추가 정보
-  기능 요청과 관련하여 추가적으로 설명할 내용이 있으면 적어주세요.
-
-  ```
-
-### 이슈 관리
-* 커밋할 때 이슈 메세지 추가
-  - 커밋 메세지 입력 시 이슈 번호 지정
-    ```
-    feat: 카카오 연동 완료
-
-    #123 
-    ```
-* 커밋할 때 이슈 종료
-  - 커밋 메세지 입력 시 이슈 번호와 다음 키워드 같이 사용
-    ```
-    close
-    closes
-    closed
-    fix
-    fixes
-    fixed
-    resolve
-    resolves
-    resolved
-    ```
-    ```
-    feat: 카카오 연동 오류 수정
-    
-    fix #123
-    ```
 
 
 
 
 
-### 마일스톤
-
-### 레이블
-
-## 깃허브 프로젝트 생성
-### 백로그 추가하면 이슈에 자동 등록
-
-
-## 위키 및 README.md
 
 
 
-## 커밋 컨벤션
 
-## 코드 컨벤션
 
 
 ## Tailwindcss 설정
@@ -154,18 +14,17 @@ mkdir ".github/ISSUE_TEMPLATE"
 
 
 ## 깃허브 룰 설정
+
+### develop 브랜치 생성
+#### 기본으로 지정
+### 브랜치 생성
+- 모든 작업은 브랜치를 만들어서 진행
+
 ### PR 템플릿
 
 
 
 
-## 마일스톤 생성
-* 마일스톤: 유사한 이슈들을 하나로 모아서 관리
-* 개발 목표를 마일스톤으로 만들고 관련 이슈들을 미리 생성하면 이슈들의 Open, Close 상태를 한눈에 관리
-* Issues > Milestones > Create a Milestone
-  - 스프린트 1주차, 2024-10-18, 마크업 완성
-  - 스프린트 2주차, 2024-10-25, 필수 기능 구현
-  - 스프린트 3주차, 2024-10-31, 필수 기능 구현이 완료되면 추가 기능 구현
 
 
 
@@ -177,97 +36,6 @@ mkdir ".github/ISSUE_TEMPLATE"
 
 
 
-
-
-
-
-
-
-
-
-
-
-## 컨벤션
-ddf
-
-# 실습
-
-## 팀 레포지토리 생성
-### 팀원 초대
-
-### develop 브랜치 생성
-#### 기본으로 지정
-
-## 레포지토리 clone
-
-## 개발
-### 브랜치 생성
-- 모든 작업은 브랜치를 만들어서 진행
-
-## 레포지토리에 반영
-
-### add
-
-### commit
-
-### push
-
-### Pull Request(PR)
-
-# Github에서 프로젝트 관리
-
-## 목차
-
-- [프로젝트 생성](#프로젝트-생성)
-- [레이블 추가 및 편집](#레이블-추가-및-편집)
-- [마일스톤 생성](#마일스톤-생성)
-
-## 프로젝트 생성
-
-**Step-1**  
-프로젝트 관리를 위해 Organization 계정의 Projects를 선택한 후 New Project 버튼을 클릭합니다.
-
-**Step-2**  
-Table, Board, Roadmap 중에서 원하는 뷰(Views) 스타일을 선택하고 프로젝트 이름을 입력한 후 Create Project 버튼을 클릭합니다. (실습은 Table 스타일을 선택해서 진행하도록 하겠습니다.)
-
-**Step-3**  
-Table View의 이름을 백로그로 변경한 후 항목을 추가합니다. Table View에 원하는 필드를 추가할 경우 체크한 후 save 버튼을 클릭합니다.
-
-**Step-4**  
-백로그 항목에 Repository를 연결하면 각 항목이 해당 프로젝트 저장소에 이슈(Issues)로 자동 등록됩니다.
-
-**Step-5**  
-Board View를 추가하면 Kanban 스타일로도 백로그를 확인할 수 있으며 No Status, Todo, In Progress, Done 등의 상태로 이동 및 확인이 가능합니다.
-
-**Step-6**  
-이슈를 팀원에게 할당하고자 할 때 Table View에서도 가능하지만 Board View에서 이슈를 선택하여 작업할 팀원을 지정할 수 있습니다.
-
-**Step-7**  
-이슈에 추가할 레이블과 마일스톤을 생성 및 편집 후 이슈별로 지정합니다.
-
-## 레이블 추가 및 편집
-
-**Step-1**  
-레이블 추가 및 편집을 위해서는 Issues 항목에서 Labels를 선택합니다.
-
-**Step-2**  
-New label 버튼을 클릭하여 새로운 레이블을 추가하거나 Edit 버튼을 클릭하여 기존 레이블을 수정할 수 있습니다. 이때 레이블의 색상은 직접 입력하거나 color 버튼을 이용해 랜덤하게 지정할 수도 있습니다.
-
-## 마일스톤 생성
-
-**Step-1**  
-마일스톤 추가 및 편집을 위해서는 Issues 항목에서 Milestones을 선택합니다.
-
-**Step-2**  
-New Milestones 버튼을 클릭한 후 새로운 마일스톤을 추가합니다.
-
-
-# 문서화
-## README.md
-
-## 컨벤션 및 위키
-
-## 목차
 
 ### 커밋 컨벤션(Commit Convention)
 
@@ -410,6 +178,7 @@ git remote add origin https://github.com/<Github ID>/<리모트저장소 URL>
 ```bash
 git push --set-upstream origin main
 ```
+
 
 **Step-5**
 
